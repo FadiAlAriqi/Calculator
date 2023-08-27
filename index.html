@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+
+                <input type="text" id="input" readonly="readonly" placeholder="0">
+                <input type="text" id="result" readonly="readonly" placeholder="Result">
+
+                <button onclick="clearResult()" style="background-color: rgb(245, 35, 151);">Cl</button>
+                <button onclick="deleteResult()">Del</button>
+                <button onclick="appendOperator('%')">%</button>
+                <button onclick="appendOperator('/')">/</button>
+
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button onclick="appendOperator('*')">x</button>
+
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button onclick="appendOperator('-')">-</button>
+ 
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button onclick="appendOperator('+')">+</button>
+
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="appendNumber('00')">00</button>
+                <button onclick="appendOperator('.')">.</button>
+                <button onclick="calculate()" style="background-color: rgb(6, 243, 231); color: #252525;">=</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
